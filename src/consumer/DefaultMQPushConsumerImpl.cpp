@@ -223,7 +223,7 @@ DefaultMQPushConsumerImpl::DefaultMQPushConsumerImpl(const string& groupname)
 }
 
 void DefaultMQPushConsumerImpl::boost_asio_work() {
-  LOG_INFO("DefaultMQPushConsumerImpl::boost asio async service runing");
+//  LOG_INFO("DefaultMQPushConsumerImpl::boost asio async service runing");
   boost::asio::io_service::work work(m_async_ioService);  // avoid async io
   // service stops after
   // first timer timeout
